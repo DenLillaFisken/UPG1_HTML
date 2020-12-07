@@ -49,6 +49,7 @@ a:hover {
     border-bottom: 1px solid rgba(112, 112, 112, .6);
 }
 @media (min-width: 768px) { #topmenu { display: block; }}
+@media (min-width: 1200px) { #topmenu { display: block; }}
 #topmenu .container {
     display: flex;
     justify-content: space-between;
@@ -78,15 +79,15 @@ a:hover {
     padding-top: 1rem;
     font-size: 1.12rem;
 }
-@media (min-width: 768px) { #mainmenu { padding-top: 30px; padding-bottom: 30px;} }
-@media (min-width: 1200px) { #mainmenu { padding-top: 50px; padding-bottom: 50px;} }
+@media (min-width: 768px) { #mainmenu { padding-top: 50px; padding-bottom: 50px;} }
 #mainmenu .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
 }
-@media (min-width: 768px) { #mainmenu .container {padding-bottom: 0px;}}
+@media (min-width: 768px) { #mainmenu .container {padding-bottom: 0px;} 
+}
 #mainmenu .container .logo {
     height: 50px;
     margin-left: 10px;
@@ -140,11 +141,6 @@ a:hover {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 500px;
-    }
-}
-@media (min-width: 1200px){ 
-    #showcase .container{
         height: 700px;
     }
 }
@@ -153,14 +149,9 @@ a:hover {
 }
 @media (min-width: 768px){
     #showcase .content-img{
-        width: 350px;
+        width: 615px;
         display: flex;
         align-self: flex-end;
-    }
-}
-@media (min-width: 1200px){
-    #showcase .content-img{
-        width: 615px;
     }
 }
 #showcase .content{
@@ -175,11 +166,6 @@ a:hover {
         max-width: 690px;
         align-items: initial;
         justify-content: flex-end;
-        margin-left: 50px;
-    }
-}
-@media (min-width: 1200px){
-    #showcase .content{
         margin-left: 150px;
     }
 }
@@ -192,14 +178,9 @@ a:hover {
 }
 @media (min-width: 768px){
     #showcase .content h1{
-        font-size: 2rem;
+        font-size: 3.75rem;
         margin: 0;
         text-align: left;
-    }
-}
-@media (min-width: 1200px){
-    #showcase .content h1{
-        font-size: 3.75rem;
     }
 }
 #showcase .content p{
@@ -225,7 +206,7 @@ a:hover {
     padding: 20px;
     margin-bottom: 3vh;  
 } 
-@media (min-width: 1200px){#showcase .content button{width: 239px;}}
+@media (min-width: 768px){#showcase .content button{width: 239px;}}
 /* About Us */
 #about-us .container{
     display: flex;
@@ -256,12 +237,7 @@ a:hover {
         text-align: left;
         padding: 0;
         padding-bottom: 30px;
-        max-width: 570px;
-        font-size: 2rem;
-    }
-}
-@media (min-width: 1200px){
-    #about-us .content li h1{
+        width: 570px;
         font-size: 2.5rem;
     }
 }
@@ -282,18 +258,13 @@ a:hover {
         font-size: 1.12rem;
     }
 }
-@media (min-width: 1200px){
-    .about-us-text{
-        font-size: 1.12rem;
-    }
-}
 .blue-text{
     font-family: 'Roboto Slab', serif;
     color: #2BAAEC;
     font-size: 2rem;  
     margin: 0;
 }
-@media (min-width: 1200px){
+@media (min-width: 768px){
     .blue-text{
         font-size: 2.5rem;  
     }
@@ -337,7 +308,7 @@ a:hover {
 #about-us .content-img{
     display: none;
 }
-@media (min-width: 1200px){
+@media (min-width: 768px){
     #about-us .content-img{
         height: 614px;
         display: flex;
@@ -364,19 +335,6 @@ a:hover {
       "tooth6";
   }
   @media (min-width: 768px){
-    .grid-container {
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
-        gap: 20px;
-        margin-bottom: 10vh;
-        grid-template-areas:
-          "service service"
-          "tooth1 tooth2"
-          "tooth3 tooth4"
-          "tooth5 tooth6";
-      }
-}
-  @media (min-width: 1200px){
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: auto;
@@ -466,16 +424,10 @@ a:hover {
   }
   @media (min-width: 768px){
     #our-services h3{
-        font-size: 2rem;
         padding: 0rem;
         margin-top: 145px;
         margin-bottom: 70px;
         padding-bottom: 30px;
-      }
-  }
-  @media (min-width: 1200px){
-    #our-services h3{
-        font-size: 2.5rem;
       }
   }
   #our-services h4{
@@ -536,14 +488,9 @@ a:hover {
 @media (min-width: 768px){
     #appointment p{
         text-align: left;
-        font-size: 1.7rem; 
+        font-size: 1.87rem; 
         padding: 80px 0;
         margin: 0;
-    }
-}
-@media (min-width: 1200px){
-    #appointment p{
-        font-size: 1.87rem; 
     }
 }
 #appointment button{
@@ -562,7 +509,7 @@ a:hover {
     #appointment button{
         width: 285px;
         padding: 25px;
-        font-size: 1.12rem;
+        font-size: 1rem;
         margin: 0;
     }
 }
